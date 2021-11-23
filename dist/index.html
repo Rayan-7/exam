@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Exam</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+
+</head>
+
+<body>
+    <div>
+    <input type="text" id="searchInput" placeholder="Search">	
+    <button  type="submit"  id="submitBtn">Submit</button>
+    </div>
+
+    <div id="container">
+      
+    </div>
+    
+    <script id="menu-template" type="text/x-handlebars-template">
+        
+          {{#each Recipes}}
+            <div class="nav-item">{{title}}<br><img class="images" src="{{{thumbnail}}}"><br>
+                
+                <li>{{ingredients}}</li>
+               
+            </div>
+          {{/each}}
+      </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" crossorigin="anonymous"></script>
+    <script src="Renderer.js"></script>
+
+</body>
+
+</html>

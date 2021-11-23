@@ -1,0 +1,22 @@
+#heatInput{
+    width: 85%;
+}
+
+#container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+}
+
+.nav-item{
+    
+    margin: auto;
+}
+
+.images{
+    
+        width: 120px;
+        height: auto;
+    
+}
